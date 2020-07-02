@@ -89,7 +89,7 @@ footer {
 
 /* We're being mobile friendly! */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     article > p {
         text-indent:5%;
     }
