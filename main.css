@@ -1,4 +1,32 @@
 body {
-    background-color:darkblue;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(20,20,121,1) 85%, rgba(33,119,152,1) 100%); 
     color:azure;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#title {
+    font-family:Audiowide, cursive;
+    text-align:center;
+}
+.title__name{
+    font-weight: 800;
+    font-size: 2em;
+    text-shadow: 3px 4px cornflowerblue;
+    line-height: 1.2em;
+}
+.title__avatar {
+    animation: meow 0.2s;
+}
+#content {
+    display:flexbox;
+    flex-direction:column;
+    padding:5vw;
+}
+.content--heading {
+    text-align:center;
+}
+.content--portfolio img {
+    width:90vw;
+    height:auto;
+    padding:5vw 0;
 }
