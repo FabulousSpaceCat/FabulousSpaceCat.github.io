@@ -3,26 +3,28 @@ body {
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(20,20,121,1) 85%, rgba(33,119,152,1) 100%); 
     color:azure;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 #title {
     font-family:Audiowide, cursive;
     text-align:center;
+    font-size:2vw;
+
 }
-.title--name{
-    font-size: 8vw;
+.title--name {
     text-shadow: 3px 4px cornflowerblue;
-    line-height: 1.2em;
+    font-size:7vw;
 }
 .title--avatar:hover {
     animation: meow 0.2s;
 }
 #content {
-    display:flexbox;
+    display:flex;
     flex-direction:column;
-    padding:5vw;
+    padding:0 5vw;
 }
 #content div {
-    padding-bottom:2vw;
+    padding:2vh 0 0 0;
 }
 .content--heading {
     text-align:center;
@@ -41,13 +43,12 @@ body {
 .content--heading:after {
     margin: 10px 0 0 2vw;
 }
-.content--portfolio {
-    width:100%;
-}
 .content--portfolio img {
-    width: 100%;
+    max-width:100%;
+    display:block;
     height:auto;
-    padding:0 0 5vw 0;
+    margin:auto;
+    padding:0 0 2vh 0;
 }
 .content--xpbars {
     list-style:none;
@@ -84,8 +85,6 @@ footer {
     text-align:center;
 }
 
-
-
 @-webkit-keyframes xpbars {
     0% { width: 0; }
 }
@@ -95,3 +94,36 @@ footer {
 @keyframes xpbars {
     0% { width: 0; }
 }  
+
+/* Meow animation goes here when I make the meow. */
+
+/* The two column version doesn't quite work right yet.  I will tinker with it later, or convert to grid. */
+
+/* @media screen and (min-width:768px) {
+    #content {
+        flex-direction:row;
+        flex-wrap: wrap; 
+        align-content: space-around;
+        justify-content: center;
+    }
+    #content div {
+        flex:0 40vw;
+        margin:0 1vw;
+        padding:0;
+
+    }
+    .content--heading:before, .content--heading:after {
+        content:"";
+        position:absolute;
+        width:12vw;
+        height:5px;
+        border-top:1px solid cornflowerblue;
+        border-bottom:1px solid cornflowerblue;
+    }
+    .content--heading:before {
+        margin: 10px 0 0 -14vw;
+    }
+    .content--heading:after {
+        margin: 10px 0 0 2vw;
+    }
+} */
