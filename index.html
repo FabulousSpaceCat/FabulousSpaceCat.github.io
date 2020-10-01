@@ -3,61 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="normalize.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Christina Deming is the Fabulous Space Cat</title>
 </head>
 <body>
     <header id="title">
         <h1 tabindex="0">
-            <span class="title--name">Christina Deming</span><br>
-            is the<br>
-            <span class="title--name">FabulousSpaceCat</span></h1>
-
-            <!-- Might make this a background image -->
-
-            <img class="title--avatar" src="FabulousSpaceCat.png" alt="The FabulousSpaceCat">        
+            <span class="title--name">Christina Deming</span>
+            <br>
+            is the
+            <br>
+            <span class="title--name">FabulousSpaceCat</span>
+            <br>
+            Knower of things, developurr of worlds.
+        </h1>
     </header>
-    <main id="content">
-        <div>
-        <h3 class="content--heading" tabindex="0">A real cat of all trades.</h3>
-           <p>I try to know at least a little bit about everything so I can connect all the dots- clearly, I love to learn. My pride is in being self-sufficient, but don't take that to mean I won't ask for help, or be a terrible teammate. If you know where the dot goes, I need to learn that; if you're part of my team, that dot is yours and I am counting on you to handle it, because we're going to make something beautiful. Definitely ask me for help! My ideas might seem like they come out of left field, but that's because I didn't pursue knowledge in any particular order, and probably not in the fields you're expecting. Sometimes I procrastinate- not because I'm avoiding a task, but because there's so much to do and I should have organized my checklist better.</p>
+<main>
+    <div class="divider"></div>
+    <div class="content">
+        <div id="about">
+            <h3 tabindex="0">A real cat of all trades.</h3>
+            <p>I try to know at least a little bit about everything so I can connect all the dots- clearly, I love to learn. My pride is in being self-sufficient, but don't take that to mean I won't ask for help, or be a terrible teammate. If you know where the dot goes, I need to learn that; if you're part of my team, that dot is yours and I am counting on you to handle it, because we're going to make something beautiful. Definitely ask me for help! My ideas might seem like they come out of left field, but that's because I didn't pursue knowledge in any particular order, and probably not in the fields you're expecting. Sometimes I procrastinate- not because I'm avoiding a task, but because there's so much to do, so much more to learn, and I should have organized my checklist better.</p>
         </div>
-        <div>
-            <h3 class="content--heading" tabindex="0">You might notice the cat is:</h3>
+        <div id="skills">
+            <h3 tabindex="0">You might notice the cat is:</h3>
             <ul class="content--xpbars">
 
-                <!-- There IS a good usecase for inline styles -->
+                <!-- There IS a good usecase for inline styles, but hopefully css will finish catching up soon -->
 
-                <li data-skills="100">Fabulous<span style="width:100%"></span></li>
-                <li data-skills="60">Making Checklists<span style="width:60%"></span></li>
-                <li data-skills="85">Not Panicking<span style="width:85%"></span></li>
-                <li data-skills="100">Reading the Manual<span style="width:100%"></span></li>
-                <li data-skills="50">Doing Her Homework<span style="width:50%"></span></li>
-                <li data-skills="50">Learning Something Else Instead<span style="width:50%"></span></li>
-                <li data-skills="75">Rubber Ducking<span style="width:75%"></span></li>
+                <li>Fabulous
+                    <progress max="100" value="100">
+                        <div class="content--progress-bar">
+                            <span style="width: 100%;"></span>
+                        </div>
+                    </progress>
+                </li>
+                <li\>Making Checklists
+                    <progress max="100" value="60">
+                        <div class="content--progress-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </progress>
+                </li>
+                <li>Not Panicking
+                    <progress max="100" value="85">
+                        <div class="content--progress-bar">
+                            <span style="width: 85%;"></span>
+                        </div>
+                    </progress>
+                </li>
+                <li>Building Things
+                    <progress max="100" value="50">
+                        <div class="content--progress-bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+                    </progress>
+                </li>
+                <li>Learning Something Else Instead
+                    <progress max="100" value="50">
+                        <div class="content--progress-bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+                    </progress>
+                </li>
+                <li>Rubber Ducking
+                    <progress max="100" value="75">
+                        <div class="content--progress-bar">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </progress>
+                </li>
             </ul>
         </div>
-        <div>
-            <h3 class="content--heading" tabindex="0">Now what's going on with that cat?</h3>
-            <p>I'm an assistant - definitely a little more hands on than your smart speaker. My clients have needed my assistance with teleconferencing, screen sharing, green screens and cameras for broadcasting, and recording equipment for podcasts.  I've taught the major office programs, and a few of the major art programs. If you need to get something done, I will figure out how to do it, and more importantly, how much you really need to know about it.</p>
+    </div>
+    <div class="divider"></div> 
+    <div class="content"> 
+        <div id="reflection">
+            <h3 tabindex="0">Now what's going on with that cat?</h3>
+            <h3></h3>
+            <p>I'm a maker - building things from scratch means it's everything I want and nothing I don't want. In fact, you're looking at one of my creations- I just completed a course to complement my knowledge of HTML and CSS with Javascript, NodeJS, and SQL, so I can take a site from start to finish.  But it's not just websites; I can model a part and print it the same day, because 3D printing is almost a replicator and we live in the future. </p>
             <p>I'm a fixer - you won't catch me throwing things away just because. The key principles of being frugal and keeping a low waste footprint is to reduce, recycle, and reuse. I'm that person who will take three broken items and end up with one that works. Starting from this position means I've done the research and can plan purchases inside a tight budget, or for a specific use case, including an upgrade path to get the most out of the equipment.</p>
-            <p>I'm a maker - building things from scratch means it's everything I want and nothing I don't want. I can model a part and print it the same day, because 3D printing is almost a replicator and we live in the future. My haven is my workshop; I can take a project from start to finish with metal and wood working, build the electronics to run it, and make the blueprints to share my creation with anyone who might find them useful.</p>
+            <p>I'm an assistant - definitely a little more hands on than your smart speaker. My clients have needed my help with teleconferencing, screen sharing, green screens and cameras for broadcasting, and recording equipment for podcasts.  I've taught the major office programs, and a few of the major art programs. If you need to get something done, I will figure out how to do it, and more importantly, how much you really need to know about it to get your job done.</p>
             <p>I'm an artist - creativity is what all of my other skills are based on. I started out with a pencil and paper, and it's still one of my hobbies. My goal is to help people visualize their ideas; I've formatted manuscripts and designed book covers for professional publishing, but my roots are simply bringing someone's character to life. There's always a new character to draw, mostly for fun, occasionally for profit, but always for practice. </p>
         </div>
-        <div class="content--portfolio">
-            <h3 class="content--heading" tabindex="0">Go on, take a look!</h3>
-            <img src="bpp.png" alt="Burning Pixel Productions website screenshot">
-            <img src="frontpanel.jpg" alt="Custom 5 1/4 drive cover prototype for a computer">
+    </div>
+    <div class="divider"></div> 
+    <div class="content">
+        <div id="portfolio">
+            <h3 tabindex="0">Go on, take a look!</h3>
+            <h3></h3>
+            <p><img src="bpp.png" alt="Burning Pixel Productions website screenshot"></p>
+            <p><img src="frontpanel.jpg" alt="Custom 5 1/4 drive cover prototype for a computer"></p>
         </div>
-        <div>
-            <h3 class="content--heading" tabindex="0">Let's talk.</h3>
-            <p>Social links will go here.</p>
-        </div>
-    </main>
-    <footer>
-        <p id="theend">Meow.</p>
-    </footer>
+    </div>
+</main>
 </body>
 </html>
