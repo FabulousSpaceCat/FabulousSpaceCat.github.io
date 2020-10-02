@@ -1,129 +1,214 @@
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(20,20,121,1) 85%, rgba(33,119,152,1) 100%); 
+    background: linear-gradient(180deg, rgb(2,0,36) 0%, rgb(20,20,121) 85%, rgb(33,119,152) 100%); 
+    background-image:url("Astronaut\ Cat.png");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color:azure;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+}
+h3 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding-left:0;
+    margin-left:0;
+}
+progress {
+    /* Remove the default appearance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    background:grey;
+    width: 100%;
+    height: 15px;
+    color:rebeccapurple;
+}
+progress[value]::-moz-progress-bar { 
+    background: linear-gradient(90deg,rgb(255, 83, 212) 0%, rgb(114, 10, 146) 100%);
+}
+progress[value]::-webkit-progress-value { 
+    background: linear-gradient(90deg,rgb(255, 83, 212) 0%, rgb(114, 10, 146) 100%);
+}
+progress[value]::-webkit-progress-bar { 
+    /* Because webkit gotta be special */
+    background:grey;
+}
+.progress-bar {
+    background-color: grey;
+    width: 100%;
+    height: 15px;
+    position: relative;
+    display: block;
+}
+.progress-bar > span {
+    background-color: #ff53d4;
+    display: block;
 }
 #title {
-    font-family:Audiowide, cursive;
-    text-align:center;
-    font-size:2vw;
-
-}
-.title--name {
-    text-shadow: 3px 4px cornflowerblue;
-    font-size:7vw;
-}
-.title--avatar:hover {
-    animation: meow 0.2s;
-}
-#content {
     display:flex;
     flex-direction:column;
-    padding:0 5vw;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
 }
-#content div {
-    padding:2vh 0 0 0;
-}
-.content--heading {
+#title h1{
     text-align:center;
+    font-size:3vw;
+    text-shadow:
+       2px 2px 0 rgb(172, 17, 172),
+     -1px -1px 0 rgb(166, 54, 231),  
+      1px -1px 0 rgb(166, 54, 231),
+      -1px 1px 0 rgb(166, 54, 231),
+       1px 1px 0 rgb(166, 54, 231);
 }
-.content--heading:before, .content--heading:after {
-    content:"";
-    position:absolute;
-    width:50vw;
-    height:5px;
-    border-top:1px solid cornflowerblue;
-    border-bottom:1px solid cornflowerblue;
+.title--name {
+    font-family:"Geostar Fill", 'Courier New', Courier, monospace;
+    font-size:6vw;
+    text-shadow:
+    3px 3px 0 rgb(172, 17, 172),
+  -1px -1px 0 rgb(166, 54, 231),  
+   1px -1px 0 rgb(166, 54, 231),
+   -1px 1px 0 rgb(166, 54, 231),
+    1px 1px 0 rgb(166, 54, 231)
 }
-.content--heading:before {
-    margin: 10px 0 0 -52vw;
+.divider {
+    position: relative;
+    text-align: center;
+    padding-bottom: 10rem;
+    margin-bottom: -5.3rem;
+    height: 0px;
+    width: 100%;
+    z-index:-1;
 }
-.content--heading:after {
-    margin: 10px 0 0 2vw;
+.divider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50.1%;
+    background: white;
+    -ms-transform: skew(0deg, 10deg);
+    -webkit-transform: skew(0deg, 10deg);
+    transform: skew(0deg, 10deg);
+    box-shadow: 
+        0 -1.5rem rgb(255, 83, 212),
+        0 -2.5rem rgb(172, 17, 172),
+        0 -3rem rgb(114, 10, 146);
 }
-.content--portfolio img {
-    max-width:100%;
-    display:block;
-    height:auto;
-    margin:auto;
-    padding:0 0 2vh 0;
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50.1%;
+    background: white;
+    -ms-transform: skew(0deg, -10deg);
+    -webkit-transform: skew(0deg, -10deg);
+    transform: skew(0deg, -10deg);
+    box-shadow: 
+        0 -1.5rem rgb(255, 83, 212),
+        0 -2.5rem rgb(172, 17, 172),
+        0 -3rem rgb(114, 10, 146);
 }
-.content--xpbars {
-    list-style:none;
-    padding:0px;
-}
-.content--xpbars li {
-    margin-bottom:20px;
+.content {
+    background:linear-gradient(180deg, #ffffffff 0%, #ffffffff 40%, #ffffffbb 100%);
+    color:rebeccapurple;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top:-5rem;
+    margin-bottom:12rem;
+    padding-bottom:2.3rem;
     position:relative;
 }
-.content--xpbars li:after {
-    background:cornflowerblue;
-    display:block;
-    position:absolute;
-    bottom:-8px;
-    height:5px;
+.content:after {
+    border-bottom: 9vw solid #ffffffbb;
+    border-left: 49.4vw solid transparent;
+    border-right: 49.4vw solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top:100%;
+    width: 0;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.content > div {
+    margin:1vw 5vw;
+}
+#reflection, #portfolio {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: center;
+    transform: none;
+}
+#reflection p, #reflection h3,
+#portfolio p, #portfolio h3 {
+    margin:1vw;
+}
+#portfolio {
+    height:max-content;
+    align-items: center;
+}
+#portfolio img {
     width:100%;
-    content:"";
-}
-.content--xpbars li span {
-    background:lightcyan;
-    display:block;
-    position:absolute;
-    bottom:-8px;
-    left:0;
-    height:5px;
-    width:inherit;
-    content:"";
-    z-index:1;
-    -webkit-animation: xpbars 2s;
-    -moz-animation: xpbars 2s;
-    animation: xpbars 2s;
-}
-footer {
-    text-align:center;
 }
 
-@-webkit-keyframes xpbars {
-    0% { width: 0; }
-}
-@-moz-keyframes xpbars {
-    0% { width: 0; }
-}
-@keyframes xpbars {
-    0% { width: 0; }
-}  
-
-/* Meow animation goes here when I make the meow. */
-
-/* The two column version doesn't quite work right yet.  I will tinker with it later, or convert to grid. */
-
-/* @media screen and (min-width:768px) {
-    #content {
+@media only screen and (min-width: 768px) {
+    h3 {
+        margin-top:-2rem;
+    }
+    .content {
         flex-direction:row;
-        flex-wrap: wrap; 
-        align-content: space-around;
-        justify-content: center;
     }
-    #content div {
-        flex:0 40vw;
-        margin:0 1vw;
-        padding:0;
-
+    .content > div {
+        flex-basis:45vw;
+        margin:1vw;
     }
-    .content--heading:before, .content--heading:after {
-        content:"";
-        position:absolute;
-        width:12vw;
-        height:5px;
-        border-top:1px solid cornflowerblue;
-        border-bottom:1px solid cornflowerblue;
+    .content > div:nth-child(even) {
+        -ms-transform: skew(0deg, -10deg);
+        -webkit-transform: skew(0deg, -10deg);
+        transform: skew(0deg, -10deg);
     }
-    .content--heading:before {
-        margin: 10px 0 0 -14vw;
+    .content > div:nth-child(odd) {
+        -ms-transform: skew(0deg, 10deg);
+        -webkit-transform: skew(0deg, 10deg);
+        transform: skew(0deg, 10deg);
     }
-    .content--heading:after {
-        margin: 10px 0 0 2vw;
+    #reflection, #portfolio {
+        flex-basis:95vw;
+        flex-direction:row;
     }
-} */
+    #reflection p, #reflection h3,
+    #portfolio p, #portfolio h3 {
+        flex-basis:45vw;
+    }
+    #reflection h3, #portfolio h3 {
+        margin-top:-2rem;
+    }
+    #reflection p:nth-child(even), #reflection h3:nth-child(even),
+    #portfolio p:nth-child(even), #portfolio h3:nth-child(even) {
+        -ms-transform: skew(0deg, -10deg);
+        -webkit-transform: skew(0deg, -10deg);
+        transform: skew(0deg, -10deg);
+    }
+    #reflection p:nth-child(odd), #reflection h3:nth-child(odd),
+    #portfolio p:nth-child(odd), #portfolio h3:nth-child(odd) {
+        -ms-transform: skew(0deg, 10deg);
+        -webkit-transform: skew(0deg, 10deg);
+        transform: skew(0deg, 10deg);
+    }
+    #portfolio {
+        align-items: flex-start;
+    }
+}
